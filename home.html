@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-	<title>Home</title>
+	<title>Car Service</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220608152745">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220902181017">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header class="header" data-scroll="120" data-scroll-show>
+		<header class="header" data-scroll-show>
 			<div class="header__container">
 				<button class="icon-menu" type="button">
 					<span></span>
@@ -23,22 +23,22 @@
 					<nav class="header__menu menu">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a class="menu__link" data-goto-header data-goto=".booking" data-goto-speed="1000" href="#">Home</a>
+								<a class="menu__link" data-goto-header data-goto="#home" href="#">Home</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" data-goto-header data-goto=".quote" data-goto-speed="1000" href="#">Features</a>
+								<a class="menu__link" data-goto-header data-goto="#features" href="#">Features</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" data-goto-header data-goto=".offer" data-goto-speed="1000" href="#">Services</a>
+								<a class="menu__link" data-goto-header data-goto="#services" href="#">Services</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" data-goto-header data-goto=".brands" data-goto-speed="1000" href="#">Our Clients</a>
+								<a class="menu__link" data-goto-header data-goto="#brands" href="#">Our Clients</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" data-goto-header data-goto=".reviews" data-goto-speed="1000" href="#">Testimonials</a>
+								<a class="menu__link" data-goto-header data-goto="#testimonials" href="#">Testimonials</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" data-goto-header data-goto=".questions" data-goto-speed="1000" href="#">FAQ</a>
+								<a class="menu__link" data-goto-header data-goto="#questions" href="#">FAQ</a>
 							</li>
 						</ul>
 					</nav>
@@ -54,7 +54,7 @@
 		</header>
 		<main class="page">
 
-			<section class="booking" data-watch="navigator">
+			<section class="booking" id="home">
 				<div class="booking__container">
 					<div class="booking__item">
 						<h1 class="booking__title main-title mb-32">
@@ -112,7 +112,7 @@
 				</div>
 			</section>
 
-			<section class="quote section-padding bg-grey" data-watch="navigator">
+			<section class="quote section-padding bg-grey" id="features">
 				<div class="quote__container">
 					<div class="quote__column">
 						<h2 class="quote__title h2">
@@ -268,7 +268,7 @@
 				</div>
 			</section>
 
-			<section class="offer section-padding bg-lightgrey" data-watch="navigator">
+			<section class="offer section-padding bg-lightgrey" id="services">
 				<div class="offer__container">
 					<div class="offer__heading">
 						<span class="offer__subtitle subtitle">
@@ -473,7 +473,7 @@
 				</div>
 			</section>
 
-			<section class="brands" data-watch="navigator">
+			<section class="brands" id="brands">
 				<div class="brands__container">
 					<h2 class="brands__title h2">
 						Brands we Serve
@@ -509,7 +509,7 @@
 				</div>
 			</section>
 
-			<section class="reviews section-padding bg-lightgrey" data-watch="navigator">
+			<section class="reviews section-padding bg-lightgrey" id="testimonials">
 				<div class="reviews__container">
 					<h2 class="reviews__title h2">
 						Our customers say the nicest things about our service
@@ -627,7 +627,7 @@
 				</div>
 			</section>
 
-			<section class="questions section-padding bg-grey" data-watch="navigator">
+			<section class="questions section-padding bg-grey" id="questions">
 				<div class="questions__container">
 					<h2 class="questions__title h2">
 						Frequently Asked Questions
@@ -714,10 +714,10 @@
 									Get in touch with us for your service
 								</h5>
 								<div class="footer__socials socials">
-									<a class="socials__icon _icon-facebook" href=""></a>
-									<a class="socials__icon _icon-twitter" href=""></a>
-									<a class="socials__icon _icon-instagram" href=""></a>
-									<a class="socials__icon _icon-linkedin" href=""></a>
+									<a class="socials__icon _icon-facebook" href="#"></a>
+									<a class="socials__icon _icon-twitter" href="#"></a>
+									<a class="socials__icon _icon-instagram" href="#"></a>
+									<a class="socials__icon _icon-linkedin" href="#"></a>
 								</div>
 							</div>
 						</div>
@@ -762,22 +762,22 @@
 						<nav class="footer__menu menu-footer">
 							<ul class="menu-footer__list menu__list">
 								<li class="menu__item">
-									<a class="menu-footer__link" href="#">Home</a>
+									<a class="menu-footer__link" data-goto-header data-goto="#home" href="#">Home</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu-footer__link" href="#">Features</a>
+									<a class="menu-footer__link" data-goto-header data-goto="#features" href="#">Features</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu-footer__link" href="#">Services</a>
+									<a class="menu-footer__link" data-goto-header data-goto="#services" href="#">Services</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu-footer__link" href="#">Our Clients</a>
+									<a class="menu-footer__link" data-goto-header data-goto="#brands" href="#">Our Clients</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu-footer__link" href="#">Testimonials</a>
+									<a class="menu-footer__link" data-goto-header data-goto="#testimonials" href="#">Testimonials</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu-footer__link" href="#">FAQ</a>
+									<a class="menu-footer__link" data-goto-header data-goto="#questions" href="#">FAQ</a>
 								</li>
 							</ul>
 						</nav>
@@ -812,7 +812,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220608152745"></script>
+	<script src="js/app.min.js?_v=20220902181017"></script>
 </body>
 
 </html>

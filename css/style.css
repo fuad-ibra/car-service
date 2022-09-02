@@ -230,13 +230,6 @@ body {
   min-width: 0;
 }
 
-/*
-(i) Стили будут применяться ко 
-всем классам содержащим *__container
-Например header__container, main__container и т.д.
-Снипет (HTML): cnt
-*/
-
 [class*=__container] {
   max-width: 83.75rem;
   -webkit-box-sizing: content-box;
@@ -923,8 +916,8 @@ body::after {
 
 .scrollup {
   position: fixed;
-  bottom: 6.25rem;
-  right: 2.8125rem;
+  bottom: 1rem;
+  right: 3rem;
   width: 2.5rem;
   height: 2.5rem;
   display: -webkit-box;
@@ -971,27 +964,29 @@ body::after {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.625rem 0;
+  padding: 1.25rem 0;
   background: #1e1b1b;
   color: #fff;
   z-index: 50;
 }
 
 .header._header-scroll {
-  position: fixed;
-  top: -200%;
+  top: -100%;
   background-color: rgba(30, 27, 27, 0.95);
+  -webkit-transition: top 1.5s ease-in-out;
+  -o-transition: top 1.5s ease-in-out;
+  transition: top 1.5s ease-in-out;
 }
 
 .header._header-show {
+  position: fixed;
   top: 0;
-  -webkit-transition: top 0.3s ease 0s;
-  -o-transition: top 0.3s ease 0s;
-  transition: top 0.3s ease 0s;
+  -webkit-transition: top 1.5s ease-in-out;
+  -o-transition: top 1.5s ease-in-out;
+  transition: top 1.5s ease-in-out;
 }
 
 .header__container {
-  min-height: 4.375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
